@@ -4,10 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
+
 devDependencies:
   '@types/jest':
     specifier: ^29.5.12
     version: 29.5.12
+  '@types/lodash':
+    specifier: ^4.17.4
+    version: 4.17.4
   concurrently:
     specifier: ^8.2.2
     version: 8.2.2
@@ -22,7 +30,7 @@ devDependencies:
     version: 9.0.11
   jest:
     specifier: 30.0.0-alpha.4
-    version: 30.0.0-alpha.4(@types/node@20.12.12)
+    version: 30.0.0-alpha.4
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -1335,6 +1343,10 @@ packages:
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/lodash@4.17.4:
+    resolution: {integrity: sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==}
     dev: true
 
   /@types/node@20.12.12:
@@ -4297,6 +4309,33 @@ packages:
       - supports-color
     dev: true
 
+  /jest-cli@30.0.0-alpha.4:
+    resolution: {integrity: sha512-GoXlVJ7UU6MuWjFjAJqHFvO/tzRKpQgw08XFaqtNiLzPHtXK4Spi0tkBcr8M98NhUYYPGYSFwO7nevymp0OmYQ==}
+    engines: {node: ^16.10.0 || ^18.12.0 || >=20.0.0}
+    hasBin: true
+    peerDependencies:
+      node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
+    dependencies:
+      '@jest/core': 30.0.0-alpha.4
+      '@jest/test-result': 30.0.0-alpha.4
+      '@jest/types': 30.0.0-alpha.4
+      chalk: 4.1.2
+      exit: 0.1.2
+      import-local: 3.1.0
+      jest-config: 30.0.0-alpha.4(@types/node@20.12.12)
+      jest-util: 30.0.0-alpha.4
+      jest-validate: 30.0.0-alpha.4
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - supports-color
+      - ts-node
+    dev: true
+
   /jest-cli@30.0.0-alpha.4(@types/node@20.12.12):
     resolution: {integrity: sha512-GoXlVJ7UU6MuWjFjAJqHFvO/tzRKpQgw08XFaqtNiLzPHtXK4Spi0tkBcr8M98NhUYYPGYSFwO7nevymp0OmYQ==}
     engines: {node: ^16.10.0 || ^18.12.0 || >=20.0.0}
@@ -4700,6 +4739,27 @@ packages:
       supports-color: 8.1.1
     dev: true
 
+  /jest@30.0.0-alpha.4:
+    resolution: {integrity: sha512-8GerI17cOfl6AtmlRhzFoMctula9bbUUV67eaAOl58BkIDGqDHoVASjArRRqg/cF2iFnSwwnZ5W6S5JW00j/rg==}
+    engines: {node: ^16.10.0 || ^18.12.0 || >=20.0.0}
+    hasBin: true
+    peerDependencies:
+      node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
+    dependencies:
+      '@jest/core': 30.0.0-alpha.4
+      '@jest/types': 30.0.0-alpha.4
+      import-local: 3.1.0
+      jest-cli: 30.0.0-alpha.4
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - supports-color
+      - ts-node
+    dev: true
+
   /jest@30.0.0-alpha.4(@types/node@20.12.12):
     resolution: {integrity: sha512-8GerI17cOfl6AtmlRhzFoMctula9bbUUV67eaAOl58BkIDGqDHoVASjArRRqg/cF2iFnSwwnZ5W6S5JW00j/rg==}
     engines: {node: ^16.10.0 || ^18.12.0 || >=20.0.0}
@@ -4909,7 +4969,6 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -6194,7 +6253,7 @@ packages:
       '@babel/core': 7.24.5
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
-      jest: 30.0.0-alpha.4(@types/node@20.12.12)
+      jest: 30.0.0-alpha.4
       jest-util: 29.7.0
       json5: 2.2.3
       lodash.memoize: 4.1.2
