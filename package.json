@@ -55,6 +55,6 @@
   "type": "module",
   "dependencies": {
     "lodash": "^4.17.21",
-    "svag-types": "^0.1.4"
+    "svag-types": "^0.1.5"
   }
 }
