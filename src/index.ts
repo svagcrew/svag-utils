@@ -1,3 +1,4 @@
+export { getHash } from '@/utils/hash.js'
 export { getKeys } from '@/utils/keys.js'
 export { omit } from '@/utils/omit.js'
 export { pick } from '@/utils/pick.js'
