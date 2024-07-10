@@ -5,6 +5,7 @@ export const getRandomString = ({
   uppercase,
   lowercase,
   symbols = false,
+  numbersOnly = false,
   numbers = true,
   readable = true,
 }: {
@@ -12,9 +13,17 @@ export const getRandomString = ({
   uppercase?: boolean
   lowercase?: boolean
   symbols?: boolean
+  numbersOnly?: boolean
   numbers?: boolean
   readable?: boolean
 }) => {
+  if (numbersOnly) {
+    let result = ''
+    for (let i = 0; i < length; i++) {
+      result += Math.floor(Math.random() * 10) // Random digit between 0 and 9
+    }
+    return result
+  }
   const result = generator.generate({
     length,
     numbers,
