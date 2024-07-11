@@ -36,6 +36,7 @@
   "dependencies": {
     "generate-password": "^1.7.1",
     "json-stable-stringify": "^1.1.1",
+    "libphonenumber-js": "^1.11.4",
     "lodash": "^4.17.21",
     "svag-types": "^0.1.7",
     "uuid-by-string": "^4.0.0"
