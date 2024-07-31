@@ -1,3 +1,4 @@
+export { toArrayOfConsts } from '@/utils/array.js'
 export { normalizeBankCard, prettifyBankCard, validateBankCardByLuhn } from '@/utils/bankCard.js'
 export { normalizeEmail } from '@/utils/email.js'
 export { getHash } from '@/utils/hash.js'
