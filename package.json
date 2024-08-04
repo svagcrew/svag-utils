@@ -39,12 +39,14 @@
     "libphonenumber-js": "^1.11.4",
     "lodash": "^4.17.21",
     "svag-types": "^0.1.8",
+    "uuid": "^10.0.0",
     "uuid-by-string": "^4.0.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/json-stable-stringify": "^1.0.36",
     "@types/lodash": "^4.17.4",
+    "@types/uuid": "^10.0.0",
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "eslint": "^9.3.0",
